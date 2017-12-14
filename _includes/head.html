@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
   <link rel="shortcut icon" href="images/ayo.ico"/>
   <link rel="bookmark" href="images/ayo.ico"/>
+  {% if page.url == "/404.html" %}
+    <meta http-equiv="refresh" content="5; url=https://www.ayowater.com">
+{% endif %}
   <!--[if lte IE 8]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
   <!--[if lte IE 9]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
