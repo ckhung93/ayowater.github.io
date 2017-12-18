@@ -11,9 +11,4 @@
   <!--[if lte IE 8]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
   <!--[if lte IE 9]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-    <script>
-    // 判断非本机且未使用 https 时，强制重定向到 https。
-    if ((!window.location.host.startsWith("localhost")) && (window.location.protocol != "https:"))
-        window.location = window.location.toString().replace(/^http:/, "https:");
-</script>
 </head>
